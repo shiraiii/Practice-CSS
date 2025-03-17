@@ -1,0 +1,36 @@
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --bg-word: #5134ff;
+}
+
+.container{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 100vh;
+}
+
+
+h1::after{
+	content:'coding';
+	background: var(--bg-word);
+	color: white;
+	margin-left:.2rem;
+	border-radius: 5px;
+	padding: 10px;
+	animation: change 5s infinite;
+	font-style: bold;
+	font-weight: 900;
+}
+
+@keyframes change{
+	25%{content:'you'}
+	50%{content: 'Vibeo'}
+	75%{content: 'guitar'}
+}
+
+
