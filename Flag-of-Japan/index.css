@@ -1,0 +1,28 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    background: black;
+}
+
+:root {
+    --white: #FFFFFF;
+    --red: #BC022C;
+    --flag-height: 200px;
+}
+
+.flag{
+	display: flex;
+	height: var(--flag-height);
+	width: calc(var(--flag-height) * 3/2);
+	background: var(--white);
+	margin: 2rem auto;
+}
+
+.circle{
+	width: calc(var(--flag-height) * 3/5);
+	height: calc(var(--flag-height) *3/5);
+	margin: 2rem auto;
+	background:var(--red);
+	border-radius: 90%;
+
+}
