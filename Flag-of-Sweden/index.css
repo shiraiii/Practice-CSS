@@ -1,0 +1,38 @@
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --blue: #0269A6;
+    --yellow: #FECC00;
+    --flag-height: 200px;
+} 
+
+.flag{
+	display: flex;
+	height: var(--flag-height);
+	width: calc(var(--flag-height) * 8/5 );
+	background: var(--blue);
+	margin: 2rem auto;
+	position: relative;
+	justify-content: center;
+	align-items: center;
+}
+
+.stripe{
+	background: var(--yellow)
+}
+
+.stripe-yellow{
+	height: calc(var(--flag-height) * 2/10);
+	width: 100%;
+	position: absolute
+}
+
+.stripe-yellow2{
+	height: 100%;
+	width: calc((var(--flag-height)*8/5) * 2/16);
+	position: absolute;
+	left: calc((var(--flag-height)*8/5) * 5/16)
+}
