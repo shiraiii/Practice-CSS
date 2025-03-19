@@ -19,20 +19,20 @@ body {
 }
 
 .progress-bar {
-  width: 400px;
-  height: 60px;
+  width: 40em;
+  height: 1.5em;
   background: var(--progressbar-bg);
   border-radius: 30px;
 }
 
 .progress-status {
   border-radius: 30px;
-  animation: loading 4s forwards;
+  animation: loading linear 6s forwards;
 }
 
 @keyframes loading {
   0% {
-    width: 15%;
+    width: 10%;
     background: var(--start);
   }
 
